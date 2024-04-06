@@ -20,6 +20,22 @@
     </style>
 </head>
 <body>
+
+    <form id="secondsForm">
+        <label for="secondsInput">Enter time in seconds:</label>
+        <input type="number" id="secondsInput" name="seconds" min="0" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script>
+        document.getElementById('secondsForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            const seconds = document.getElementById('secondsInput').value; // Get the value from the input field
+            console.log("Seconds submitted:", seconds); // Example action: log the value to the console
+            // Here you can add whatever you want to do with the seconds value
+        };
+    </script>
+    
     <iframe src="https://www.retrogames.cc/embed/43051-pokemon-fire-red-extended-v3-2.html" width="600" height="400" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
 </body>
 </html>
