@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered iFrame</title>
-    <style>
+    <title>Hangman Game JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<style>
         body {
             display: flex;
             justify-content: center; /* Center horizontally */
@@ -18,17 +22,27 @@
             background-size: cover;
             text-align: center;
         }
-        iframe {
-            /* Your iframe styles (size, border, etc.) */
-            width: 600px; /* Example width */
-            height: 400px; /* Example height */
-            border: 2px solid #D37676; /* Example border style */
-        }
-    </style>
-</head>
+</style>
 <body>
-    <main>
-        <iframe src="https://www.retrogames.cc/embed/43051-pokemon-fire-red-extended-v3-2.html" width="600" height="400" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
-    </main>
+    <div class="game-modal">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
 </body>
 </html>
