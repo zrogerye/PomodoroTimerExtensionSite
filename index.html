@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered iFrame</title>
@@ -11,11 +12,17 @@
             align-items: center; /* Center vertically */
             height: 100vh; /* Use the full height of the viewport */
             margin: 0; /* Remove default margin */
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
         }
         iframe {
             /* Your iframe styles (size, border, etc.) */
             width: 600px; /* Example width */
             height: 400px; /* Example height */
+            border: 2px solid #D37676; /* Example border style */
         }
     </style>
 </head>
