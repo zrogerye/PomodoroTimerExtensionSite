@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script>
-      function waitFiveMinutes() {
-        var minutes = 5;
-        var seconds = 0;
+      var minutes = 5;
+      var seconds = 0;
+      
+      function updateTimer() {
         var timer = document.querySelector(".timer");
-        
         var countdown = setInterval(function() {
           if (seconds < 10) {
             timer.textContent = `${minutes}:0${seconds}`;
@@ -29,6 +29,10 @@
             seconds--;
           }
         }, 1000);
+      }
+      
+      function waitFiveMinutes() {
+        updateTimer();
       }
     </script>
   </head>
