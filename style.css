@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #E3F2FD;
+  background:  #D37676;
 }
 .wrapper {
   width: 65vmin;
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  background: #293447;
+  background: #EBC49F;
   box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
 }
 .game-details {
@@ -35,11 +35,11 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
-  background: #212837;
+  background: white;
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 .play-board .food {
-  background: #FF003D;
+  background: #5E4746;
 }
 .play-board .head {
   background: #60CBFF;
