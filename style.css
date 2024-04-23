@@ -42,7 +42,7 @@ body {
   background: #5E4746;
 }
 .play-board .head {
-  background: #60CBFF;
+  background: black;
 }
 .controls {
   display: none;
